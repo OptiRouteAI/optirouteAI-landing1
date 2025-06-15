@@ -5,7 +5,11 @@
   "projects": {
     "optirouteAI-login": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+         "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -22,7 +26,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/css.css"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -86,5 +91,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
